@@ -27,5 +27,18 @@
         </div>
     </div>
 
+    <div th:each="job : ${jobs}">
+        <br>
+        <table>
+            <tr th:each="j : ${job}">
+                <td th:text="${j.key}"></td>
+                <td th:text="${j.value}"></td>
+            </tr>
+        </table>
+
+
+    </div>
+
+
 </body>
 </html>
